@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=">
+<title> Registration </title>
+</head>
+<body>
+<h1> Registration Form </h1>
+<table>
+	<form action="/action_page.php" method="get">
+	<tr>
+		<td>First Name</td>
+		<td><input type="text" id="first_name" name="first_name" placeholder="Enter Your Name"></td>
+	</tr>
+	<tr>
+		<td>Last Name</td>
+		<td><input type="text" id="last_name" name="last_name" placeholder="Enter Last Name"></td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td><input type="password" id="password" name="password" placeholder="********"></td>
+	</tr>
+	<tr>
+		<td>Sex</td>
+		<td><input type="radio" id="male" name="male"><label for="male"> Male </label></td>
+		<td><input type="radio" id="female" name="female"><label for="female"> Female </label></td>
+	</tr>
+	<tr>
+		<td>Status</td>
+		<td><input type="checkbox" id="single" name="single"><label for="single">single</label></td>
+		<td><input type="checkbox" id="married" name="single"><label for="married">married</label></td>
+	</tr>
+	<tr>
+		<td>Occupation</td>
+		<td><select name="occupation" id="occupation">
+		<option value="Engineer">Engineer</option>
+		<option value="Accountant">Accountant</option>
+		<option value="Teacher">Teacher</option>	
+		</select></td>
+	</tr>
+	<tr>
+	<td><button type="reset" value="reset">Reset</button></td>
+</tr>
+</form>
+</table>
+</body>
+</html>
