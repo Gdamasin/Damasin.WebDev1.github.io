@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=">
+<title> Registration </title>
+</head>
+<body>
+<h1> Login Form </h1>
+<table>
+<tr>
+<td>Name</td>
+<td><input type="text"
+	id="txtName"
+	name="txtName"
+	placeholder="Enter Username"/>
+</td>
+</tr>
+<tr>
+	<td>Password</td>
+	<td><input type="password" id=txtPassword name="txtPassword" placeholder="********" /></td>
+</tr>
+<tr>
+	<td>Login as</td>
+	<td>
+		<input type="radio" id="loginTypeGuest" name="loginType" value="Guest"/>
+		<label for="loginTypeGuest"> Guest </label>
+
+		<input type="radio" id="loginTypeAdmin" name="loginType" value="Admin"/>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">Login as 
+		<select name="drpLoginType" id="drpLoginType">
+			<option value="Guest">Guest</option>
+			<option value="Admin">Admin</option>
+			<option value="SuperUser">Super &nbsp;&nbsp;&nbsp;&nbsp; User</option>
+			<option value="Business Owner"> Businesss Owner</option>
+		</select>
+
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<input type="checkbox" id="cbxPolicy1" name="cbxPolicy1" value="I accept lorem ipsum"/>
+		<label for="cbxPolicy1">I accept lorem ipsum</label>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<input type="checkbox" id="cbxPolicy2" name="cbxPolicy2" value="I accept lorem ipsum 2"/>
+		<label for="cbxPolicy2">I accept lorem ipsum 2</label>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+		<button id="btnLogin" onClick="alert(document.getElementById('txtName').value)">Login</button>
+	</td>
+</tr>
+</table>
+</body>
+</html>
