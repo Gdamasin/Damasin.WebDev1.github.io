@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 15%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 14px 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 10px;
+  border: 1px solid #ccc;
+  width: 50%;
+  border-left: none;
+  height: 300px;
+}
+</style>
+</head>
+<body>
+
+<h2>Master Detail</h2>
+<div class="tab">
+    <button class="button" disabled>Activities</button>
+  <button class="tablinks" onclick="openCity(event, 'registrationPage')" id="defaultOpen">Registration Page</button>
+  <button class="tablinks" onclick="openCity(event, 'calendarPage')">Calendar Page</button>
+  <button class="tablinks" onclick="openCity(event, 'wishlistPage')">Wish List Page</button>
+  <button class="tablinks" onclick="openCity(event, 'markupPage')">Mark Up Page</button>
+  <button class="tablinks" onclick="openCity(event, 'poemPage')">Poem Page</button>
+</div>
+
+<div id="registrationPage" class="tabcontent">
+  <h1> Registration Form </h1>
+<form>
+<table>
+    
+    <tr>
+        <td>First Name</td>
+        <td><input type="text" id="first_name" name="first_name" placeholder="Enter Your Name"></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td><input type="text" id="last_name" name="last_name" placeholder="Enter Last Name"></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="password" id="password" name="password" placeholder="********"></td>
+    </tr>
+    <tr>
+        <td>Sex</td>
+        <td><input type="radio" id="male" name="male"><label for="male"> Male </label></td>
+        <td><input type="radio" id="female" name="female"><label for="female"> Female </label></td>
+    </tr>
+    <tr>
+        <td>Status</td>
+        <td><input type="checkbox" id="single" name="single"><label for="single">single</label></td>
+        <td><input type="checkbox" id="married" name="single"><label for="married">married</label></td>
+    </tr>
+    <tr>
+        <td>Occupation</td>
+        <td><select name="occupation" id="occupation">
+        <option value="Engineer">Engineer</option>
+        <option value="Accountant">Accountant</option>
+        <option value="Teacher">Teacher</option>    
+        </select></td>
+    </tr>
+    <tr>
+    <td><button type="reset" value="reset">Reset</button></td>
+    </tr>
+
+    
+</form>
+</table>
+</div>
+
+<div id="calendarPage" class="tabcontent">
+  <table>
+         <tr>
+           <td colspan="7">
+             <h1>JUNE 2000</h1>
+               </td>
+          </tr>
+          <tr>
+            <td>SUN</td>
+            <td>MON</td>
+            <td>TUE</td>
+            <td>WED</td>
+            <td>THU</td>
+            <td>FRI</td>
+            <td>SAT</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td></td>
+          </tr>
+        </table>
+</div>
+
+<div id="wishlistPage" class="tabcontent">
+  <li> Personal Computer </li>
+       <li> Unlimited Food </li>
+       <li> Recording Studio </li>
+</div>
+<div id="markupPage" class="tabcontent">
+  <h1 style="text-align:center"> Existence is not equal </h1>
+<p style="text-align:center">  
+We live in world full of <strong> appreciation </strong> <br>
+somehow other people gets <em> attention </em> and others only get <strong> humiliation </strong> <br>
+<br>living a life in this cruel world who's only appreciated are the rich <br>
+while we <strong> non-talented </strong> always practice and go to <em> church and preach, </em> <br>
+<br>preaching for what? preaching for God to give us blessings and be equal,<br>
+but that's not how it works, this is a cruel world full of non-ethical.<br>
+equality is just an illusion and we cannot be better if we are <strong> equal. </strong>
+</p>
+</div>
+<div id="poemPage" class="tabcontent">
+  <h1 style="text-align:center"> Existence is not equal </h1>
+<p style="text-align:center">  
+We live in world full of appreciation <br>
+somehow other people gets attention and others only get humiliation <br>
+<br>living a life in this cruel world who's only appreciated are the rich <br>
+while we non-talented always practice and go to church and preach, <br>
+<br>preaching for what? preaching for God to give us blessings and be equal,<br>
+but that's not how it works, this is a cruel world full of non-ethical.<br>
+equality is just an illusion and we cannot be better if we are equal.
+</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
