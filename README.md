@@ -3,6 +3,7 @@
     <head>
         <title>Calendar</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href/calendar.css">
     </head>
     <body>
         <table class="center">
