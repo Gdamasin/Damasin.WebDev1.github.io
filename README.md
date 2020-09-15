@@ -3,7 +3,36 @@
     <head>
         <title>Calendar</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/calendar.css">
+        <style>
+            body {
+	background-image: url("calendar.jpg");
+}
+table, td{
+	border: 3px solid black;
+	border-spacing: 5px;
+	padding: 10px;
+	border-collapse: separate;
+	text-align: center;
+	height: 30px;
+	font-family: fantasy;
+	font-weight: bold;
+}
+td:hover {
+	background-color: lightblue;
+	opacity: 0.6;
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 250px;
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.3);
     </head>
     <body>
         <table class="center">
@@ -67,7 +96,7 @@
             <td class="zoom"></td>
           </tr>
         </table>
-        
+       </style>
     </body>
 </html>
 
