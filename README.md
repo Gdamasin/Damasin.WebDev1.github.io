@@ -3,7 +3,7 @@
     <head>
         <title>Calendar</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href/calendar.css">
+        <link rel="stylesheet" href="css/calendar.css">
     </head>
     <body>
         <table class="center">
@@ -67,6 +67,5 @@
             <td class="zoom"></td>
           </tr>
         </table>
-        
     </body>
 </html>
