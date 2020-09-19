@@ -1,6 +1,5 @@
 
 # https://gdamasin.github.io/Damasin_WebDev_Midterm/
-# https://github.com/Gdamasin/Damasin_WebDev_Midterm/POEM.html
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
