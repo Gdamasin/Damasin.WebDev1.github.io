@@ -3,7 +3,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <title>Calendar</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/calendar.css">
     </head>
